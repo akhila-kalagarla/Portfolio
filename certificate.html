@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		ul.navbar {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color:"pink";
+			
+		}
+	li.navitem{
+		float: right;
+		margin:0;
+		padding:0;
+	}
+		li.navitem a {
+			display: block;
+			color: palevioletred;
+			text-align: right;
+			padding: 18px 22px;
+			text-decoration: none;
+		}
+	
+		li.navitem a:hover {
+			background-color:whitesmoke;
+		}
+	  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+</style>
+</head>
+<body bgcolor="pink">
+  <ul class="navbar">
+    <li class="navitem"><a href="main page.html" >HOME</a></li>
+		<li class="navitem"><a href="about.html" >ABOUT</a></li>
+		<li class="navitem"><a href="contact.html">CONTACT</a></li>
+		<li class="navitem"><a href="skills.html" >SKILLS</a></li>
+		<li class="navitem"><a href="project.html" >PROJECT</a></li>
+  </ul>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of bascis of python on Edyst platform</h3>
+    <img src="static\basics of python.jpg" style="width:95%">
+  </div>
+
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of introduction to python on Edyst platform</h3>
+    <img src="static\introduction to python.jpg"style="width:95%">
+  </div>
+
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of HTML5 course on Udemy</h3>
+    <img src="static\Udemy certificate3.jpg" style="width:95%">
+  </div>
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of CSS course on Udemy</h3>
+    <img src="static\Udemy certificate2.jpg" style="width:95%">
+  </div>
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of python,Django Framework course on Udemy</h3>
+    <img src="static\Udemy certificate4.jpg" style="width:95%">
+  </div>
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of CSS,JavaScript ans PHP course on Udemy</h3>
+    <img src="static\Udemy certificate5.jpg" style="width:95%">
+  </div>
+  <div class="mySlides">
+    <h3 style="font-size:20px;text-align:center;">This is my certificate on completion of React-Online,HTML,JavaScript,CSS course on Udemy</h3>
+    <img src="static\Udemy certificate1.jpg" style="width:95%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
