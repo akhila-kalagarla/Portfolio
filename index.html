@@ -3,50 +3,63 @@
 	<style>
 		ul.navbar {
 			list-style-type: none;
-			margin: 0;
+			margin: 15px;
 			padding: 0;
-			background-color:"pink";
-			
+			background-color: pink;
 		}
-	li.navitem{
-		float: right;
-		margin:0;
-		padding:0;
-	}
+		li.navitem {
+			float: right;
+			margin: 10px;
+			padding: 0;
+		}
 		li.navitem a {
 			display: block;
-			color: palevioletred;
+			color: darkmagenta;
 			text-align: right;
-			padding: 18px 22px;
+			padding: 25px 30px; /* Increase padding for larger size */
+			font-size: 20px; /* Increase font size */
 			text-decoration: none;
 		}
-	
 		li.navitem a:hover {
-			background-color:whitesmoke;
+			background-color: cyan;
 		}
-		img{
-			display: block;
-			margin: auto;
+		.content {
+			display: flex;
+			align-items: flex-start;
+			clear: both;
+			padding: 20px;
+			margin-left: 150px; /* Increase the margin-left value to shift more to the right */
 		}
-	   </style>
-	  
-	<body bgcolor="pink">
-		<h1 style="font-size:40px;text-align:center;color:tomato;">MY PORTFOLIO</h1>
-		<h2 style="font-size:30px;text-align:center;color:tomato;">WEB DESIGNER</h2>
-	<ul class="navbar">
-		<li class="navitem"><a href="certificate.html" >CERTIFICATIONS</a></li>
-		<li class="navitem"><a href="about.html" >ABOUT</a></li>
-		<li class="navitem"><a href="contact.html">CONTACT</a></li>
-		<li class="navitem"><a href="project.html" >PROJECT</a></li>
-		<li class="navitem"><a href="index.html" >HOME</a></li>
-	</ul>
-    <h2 style="font-size:30px;text-align:center;">Hello Everyone!</h2>
-	<p style="font-size:20px;text-align:center;">I am kalagarla Akhila <br> 
-		I am a BTech student with a passion for solving real-world problems. <br>
-		I am a team player with excellent communication and problem-solving skills. <br>
-		I am also a hard worker and I am dedicated to my studies.</p>
-    <img src="static\imag.jpg">
-<body>
-    </html>
-
-	
+		.text {
+			margin-right: 20px;
+			text-align: left;
+		}
+		img {
+			max-width: 300px;
+			margin-left: 20px;
+		}
+	</style>
+	<body bgcolor="Aliceblue">
+		<h1 style="font-size: 40px; text-align: center; color: crimson;">MY PORTFOLIO</h1>
+		<h2 style="font-size: 30px; text-align: center; color: darkmagenta;">WEB DESIGNER</h2>
+		<ul class="navbar">
+			<li class="navitem"><a href="certificate.html">CERTIFICATIONS</a></li>
+			<li class="navitem"><a href="project.html">PROJECT</a></li>
+			<li class="navitem"><a href="contact.html">CONTACT</a></li>
+			<li class="navitem"><a href="about.html">ABOUT</a></li>
+			<li class="navitem"><a href="index.html">HOME</a></li>
+		</ul>
+		<div class="content">
+			<div class="text">
+				<h2 style="font-size: 40px;">Hello Everyone!</h2>
+				<h3 style="font-size: 30px;">I am Kalagarla Akhila <br></h3>
+				<h4 style="font-size: 25px;">
+					I am a BTech student with a passion for solving real-world problems. <br>
+					I am a team player with excellent communication and problem-solving skills. <br>
+					I am also a hard worker and I am dedicated to my studies.
+				</h4>
+			</div>
+			<img src="static/portpic2.jpg" alt="Profile Picture">
+		</div>
+	</body>
+</html>
